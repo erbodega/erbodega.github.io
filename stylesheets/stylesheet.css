@@ -109,6 +109,11 @@ a {
 	position: relative;
 }
 
+#fct div {
+	border: 1px solid #f00;
+	margin-bottom: 20px;
+}
+
 #fct div p {
 	font-size: 30px;
 }
