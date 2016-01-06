@@ -59,10 +59,10 @@ a {
 /* mouse selection */
 
 ::selection {
-	background: rgba(200, 0, 0, 0.5);
+	background: rgba(0, 200, 0, 0.5);
 }
 ::-moz-selection {
-	background: rgba(200, 0, 0, 0.5);
+	background: rgba(0, 200, 0, 0.5);
 }
 
 
@@ -92,7 +92,12 @@ a {
 
 #lft li:hover {
   background: #333 !important;
-    box-shadow: #d00 0px -5px 0px 0px inset;
+    box-shadow: #0d0 0px -5px 0px 0px inset;
+}
+
+.selectedftab {
+  background: #222 !important;
+  box-shadow: #0b0 0px -5px 0px 0px inset;
 }
 
 #fct {
@@ -109,9 +114,4 @@ a {
 
 .hideforum {
   display: none;
-}
-
-.selectedftab {
-  background: #222 !important;
-  box-shadow: #900 0px -5px 0px 0px inset;
 }
