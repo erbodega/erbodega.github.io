@@ -79,7 +79,12 @@ a {
 #lft {
 	cursor: default;
 	list-style: none;
+	margin: 0px auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 0px;
 	text-align: center;
+	width: 90%;
 }
 
 #lft li {
