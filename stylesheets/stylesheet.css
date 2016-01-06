@@ -77,41 +77,42 @@ a {
 /* tabs */
 
 #lft {
-  list-style: none;
-  text-align: center;
+	cursor: default;
+	list-style: none;
+	text-align: center;
 }
 
 #lft li {
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px;
-  display: inline-block;
-  transition: all 0.5s ease;
+	background: #000;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px;
+	display: inline-block;
+	transition: all 0.5s ease;
 }
 
 #lft li:hover {
-  background: #333 !important;
-    box-shadow: #0d0 0px -5px 0px 0px inset;
+	background: #333 !important;
+	box-shadow: #0d0 0px -5px 0px 0px inset;
 }
 
 .selectedftab {
-  background: #222 !important;
-  box-shadow: #0b0 0px -5px 0px 0px inset;
+	background: #222 !important;
+	box-shadow: #0b0 0px -5px 0px 0px inset;
 }
 
 #fct {
-  background: #000;
-  color: #fff;
-  height: 100%;
-  bottom: 0%;
-  position: relative;
+	background: #000;
+	color: #fff;
+	height: 100%;
+	bottom: 0%;
+	position: relative;
 }
 
 #fct div p {
-  font-size: 30px;
+	font-size: 30px;
 }
 
-.hideforum {
-  display: none;
+.hidediv {
+	display: none;
 }
