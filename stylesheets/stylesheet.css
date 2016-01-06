@@ -79,6 +79,10 @@ a {
 	z-index: 2;
 }
 
+.header img {
+	max-width: 100%;
+}
+
 .main-content {
 	margin-top: 100px;
 }
