@@ -36,6 +36,35 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
+	
+/* webkit scrollbar */
+
+::-webkit-scrollbar {  
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {  
+	background: #444;
+}
+
+::-webkit-scrollbar-thumb {  
+	background: #777;
+}
+
+::-webkit-scrollbar-thumb:hover {  
+	background: #AAA;
+}
+
+
+/* mouse selection */
+
+::selection {
+	background: rgba(200, 0, 0, 0.5);
+}
+::-moz-selection {
+	background: rgba(200, 0, 0, 0.5);
+}
+
 
 /* ids and classes styles*/
 
