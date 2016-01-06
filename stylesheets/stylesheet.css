@@ -124,10 +124,12 @@ a {
 #fct div h1 {
 	font-size: 30px;
 	font-weight: normal;
+	margin: 0px;
 }
 
 #fct div p {
 	font-size: 17px;
+	margin: 0px;
 }
 
 .hidediv {
