@@ -105,8 +105,9 @@ a {
 	background: #000;
 	color: #fff;
 	height: 100%;
-	bottom: 0%;
+	margin: 0px auto;
 	position: relative;
+	width: 85%;
 }
 
 #fct div {
