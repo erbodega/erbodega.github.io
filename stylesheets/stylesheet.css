@@ -66,6 +66,38 @@ a {
 }
 
 
+/* scroll to top laterale */
+
+.scrolltotop {
+        background: none repeat scroll 0% 0% #000;
+        bottom: 40%;
+        color: #FFF;
+        cursor: pointer;
+  	font-size: 12px;
+  	opacity: 0.9;
+        padding: 20px 10px 23px;
+        position: fixed;
+        right: 0px;
+        text-decoration: none;
+	transform: translate(0, 0);
+	transition: all 0.5s ease;
+        z-index: 3009;
+}
+
+.scrolltotop:hover {
+        background: none repeat scroll 0% 0% #050505;
+	box-shadow: 0px 0px 10px 1px #FF0000;
+        color: #F00;
+        cursor: pointer;
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.s2tdn {
+  transform: translate(150%, 0) !important;
+  transition: all 1s ease;
+}
+
 /* ids and classes styles*/
 
 .header {

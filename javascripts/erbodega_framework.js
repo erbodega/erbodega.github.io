@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', checkSTP)
+
 function showOneTab(xvw, sf1, sf2, sf3, sf4) {
 
 	var w = document.getElementById('lft').children;
@@ -41,4 +43,36 @@ function showOneTab(xvw, sf1, sf2, sf3, sf4) {
 		document.getElementById(sf4).classList.remove("hidediv");
 		document.getElementById(sf4).classList.add("activeflag");
 	}
+}
+
+
+function checkSTP() {
+	window.onscroll = function (ev) {
+		var docHeight = document.body.offsetHeight;
+		docHeight = docHeight == undefined ? window.document.documentElement.scrollHeight : docHeight;
+
+		var winheight = window.innerHeight;
+		winheight = winheight == undefined ? document.documentElement.clientHeight : winheight;
+
+		var scrollpoint = window.scrollY;
+		scrollpoint = scrollpoint == undefined ? window.document.documentElement.scrollTop : scrollpoint;
+
+		document.getElementById('scroll-to-top').classList.remove("s2tdn");
+
+		if (scrollpoint == 0) {
+			document.getElementById('scroll-to-top').classList.add("s2tdn");
+		}
+	};
+}
+
+
+function scrollToTop(duration) {
+    if (duration <= 0) return;
+    var difference =  window.scrollY;
+    var perTick = difference / duration;
+
+	setTimeout(function() {
+		window.scroll(0, window.scrollY - (perTick * 10));
+		scrollToTop(duration - 10);
+	}, 10);
 }
