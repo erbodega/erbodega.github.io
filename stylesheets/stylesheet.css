@@ -98,10 +98,7 @@ a {
 
 .s2tdn {
 	transform: translate(150%, 0) !important;
-	transition-property: translate;
-	transition-duration: 1s;
-	transition-delay: 0.2s;
-	visibility: hidden;
+	transition: all 1s ease;
 }
 
 /* ids and classes styles*/
