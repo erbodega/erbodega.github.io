@@ -68,14 +68,14 @@ function checkSTP() {
 
 function scrollToTop(duration) {
     if (duration <= 0) return;
-    var differencex =  window.scrollX;
-    var perTickx = differencex / duration;
+    var differenceX =  window.scrollX;
+    var trickX = (differenceX / duration) * 10;
 	
-	var differencey =  window.scrollY;
-    var perTicky = differencey / duration;
+	var differenceY =  window.scrollY;
+    var trickY = (differenceY / duration) * 10;
 
 	setTimeout(function() {
-		window.scroll(window.scrollX - (perTickx * 10), window.scrollY - (perTicky * 10));
+		window.scroll(differenceX - trickX, differenceY - trickY);
 		scrollToTop(duration - 10);
 	}, 10);
 }
