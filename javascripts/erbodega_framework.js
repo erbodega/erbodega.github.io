@@ -48,18 +48,9 @@ function showOneTab(xvw, sf1, sf2, sf3, sf4) {
 
 function checkSTP() {
 	window.onscroll = function (ev) {
-		var docHeight = document.body.offsetHeight;
-		docHeight = docHeight == undefined ? window.document.documentElement.scrollHeight : docHeight;
-
-		var winheight = window.innerHeight;
-		winheight = winheight == undefined ? document.documentElement.clientHeight : winheight;
-
-		var scrollpoint = window.scrollY;
-		scrollpoint = scrollpoint == undefined ? window.document.documentElement.scrollTop : scrollpoint;
-
 		document.getElementById('scroll-to-top').classList.remove("s2tdn");
 
-		if (scrollpoint == 0) {
+		if (window.scrollY == 0){
 			document.getElementById('scroll-to-top').classList.add("s2tdn");
 		}
 	};
