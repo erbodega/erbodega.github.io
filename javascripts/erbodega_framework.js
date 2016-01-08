@@ -77,20 +77,21 @@ function checkSTP() {
 
 
 function rotateARROW() {
-	var qwe = document.getElementById('stta').className;
+	var qwe = document.getElementById('stta');
+	var qwec = document.getElementById('stta').className;
 	var wer = new RegExp("s2truu");
 	var ert = new RegExp("s2trul");
 	var rty = new RegExp("s2trll");
 		
-	if (wer.test(qwe) == true){
+	if (wer.test(qwec) == true){
 		qwe.classList.remove("s2truu");
 	}
 
-	if (ert.test(qwe) == true){
+	if (ert.test(qwec) == true){
 		qwe.classList.remove("s2trul");
 	}
 	
-	if (rty.test(qwe) == true){
+	if (rty.test(qwec) == true){
 		qwe.classList.remove("s2trll");
 	}
 }
