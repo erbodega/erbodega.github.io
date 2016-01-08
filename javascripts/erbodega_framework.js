@@ -49,7 +49,8 @@ function showOneTab(xvw, sf1, sf2, sf3, sf4) {
 function checkSTP() {
 	window.onscroll = function (ev) {
 		var sttmain = document.getElementById('scroll-to-top');
-		var sttarrow = document.getElementById('scroll-to-top').firstElementChild;
+		var sttchild = document.getElementById('scroll-to-top').children;
+		var sttarrow = sttchild[0];
 		sttmain.classList.remove("s2tdn");
 		
 		if ((window.scrollX > 0) && (window.scrollY == 0)){
@@ -77,8 +78,8 @@ function checkSTP() {
 
 
 function rotateARROW(){
-	var asda = document.getElementById('scroll-to-top').firstElementChild;
-	var qwe = asda.className;
+	var asda = document.getElementById('scroll-to-top').children;
+	var qwe = asda[0].className;
 	var wer = new RegExp("s2truu");
 	var ert = new RegExp("s2trul");
 	var rty = new RegExp("s2trll");
