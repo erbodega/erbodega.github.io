@@ -101,6 +101,21 @@ a {
 	transition: all 1s ease;
 }
 
+.s2truu {
+	transform: rotate(0deg);
+	transition: all 1s ease;
+}
+
+.s2trul {
+	transform: rotate(-45deg);
+	transition: all 1s ease;
+}
+
+.s2trll {
+	transform: rotate(-90deg);
+	transition: all 1s ease;
+}
+
 /* ids and classes styles*/
 
 .header {
