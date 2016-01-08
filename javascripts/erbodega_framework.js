@@ -50,7 +50,7 @@ function checkSTP() {
 	window.onscroll = function (ev) {
 		document.getElementById('scroll-to-top').classList.remove("s2tdn");
 
-		if (window.scrollY == 0){
+		if ((window.scrollY == 0) && (window.scrollX == 0)){
 			document.getElementById('scroll-to-top').classList.add("s2tdn");
 		}
 	};
