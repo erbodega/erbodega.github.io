@@ -48,26 +48,28 @@ function showOneTab(xvw, sf1, sf2, sf3, sf4) {
 
 function checkSTP() {
 	window.onscroll = function (ev) {
-		document.getElementById('scroll-to-top').classList.remove("s2tdn");
+		var sttmain = document.getElementById('scroll-to-top');
+		var sttarrow = document.getElementById('scroll-to-top').firstElementChild;
+		sttmain.classList.remove("s2tdn");
 		
 		if ((window.scrollX > 0) && (window.scrollY == 0)){
 			rotateARROW();
-			document.getElementById('scroll-to-top').classList.add("s2trll");
+			sttarrow.classList.add("s2trll");
 		}
 		
 		if ((window.scrollX == 0) && (window.scrollY > 0)){
 			rotateARROW();
-			document.getElementById('scroll-to-top').classList.add("s2truu");
+			sttarrow.classList.add("s2truu");
 		}
 		
 		if ((window.scrollX > 0) && (window.scrollY > 0)){
 			rotateARROW();
-			document.getElementById('scroll-to-top').classList.add("s2trul");
+			sttarrow.classList.add("s2trul");
 		}
 
 		if ((window.scrollX == 0) && (window.scrollY == 0)){
 			rotateARROW();
-			document.getElementById('scroll-to-top').classList.add("s2tdn");
+			sttarrow.classList.add("s2tdn");
 		}
 	};
 }
@@ -75,7 +77,7 @@ function checkSTP() {
 
 
 function rotateARROW(){
-	var qwe = document.getElementById('scroll-to-top').className;
+	var qwe = document.getElementById('scroll-to-top').firstElementChild.className;
 	var wer = new RegExp("s2truu");
 	var ert = new RegExp("s2trul");
 	var rty = new RegExp("s2trll");
