@@ -69,7 +69,7 @@ function checkSTP() {
 
 		if ((window.scrollX == 0) && (window.scrollY == 0)){
 			rotateARROW();
-			sttarrow.classList.add("s2tdn");
+			sttmain.classList.add("s2tdn");
 		}
 	};
 }
@@ -77,7 +77,8 @@ function checkSTP() {
 
 
 function rotateARROW(){
-	var qwe = document.getElementById('scroll-to-top').firstElementChild.className;
+	var asda = document.getElementById('scroll-to-top').firstElementChild;
+	var qwe = asda.className;
 	var wer = new RegExp("s2truu");
 	var ert = new RegExp("s2trul");
 	var rty = new RegExp("s2trll");
