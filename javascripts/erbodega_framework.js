@@ -83,15 +83,15 @@ function rotateARROW(){
 	var rty = new RegExp("s2trll");
 		
 	if (wer.test(qwe) == true){
-		document.getElementById('scroll-to-top').classList.remove("s2truu");
+		qwe.classList.remove("s2truu");
 	}
 
 	if (ert.test(qwe) == true){
-		document.getElementById('scroll-to-top').classList.remove("s2trul");
+		qwe.classList.remove("s2trul");
 	}
 	
 	if (rty.test(qwe) == true){
-		document.getElementById('scroll-to-top').classList.remove("s2trll");
+		qwe.classList.remove("s2trll");
 	}
 }
 
