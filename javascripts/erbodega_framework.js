@@ -51,30 +51,22 @@ function checkSTP() {
 		document.getElementById('scroll-to-top').classList.remove("s2tdn");
 		
 		if ((window.scrollX > 0) && (window.scrollY == 0)){
-			removeUU();
-			removeUL();
-			removeLL();
+			rotateARROW();
 			document.getElementById('scroll-to-top').classList.add("s2trll");
 		}
 		
 		if ((window.scrollX == 0) && (window.scrollY > 0)){
-			removeUU();
-			removeUL();
-			removeLL();
+			rotateARROW();
 			document.getElementById('scroll-to-top').classList.add("s2truu");
 		}
 		
 		if ((window.scrollX > 0) && (window.scrollY > 0)){
-			removeUU();
-			removeUL();
-			removeLL();
+			rotateARROW();
 			document.getElementById('scroll-to-top').classList.add("s2trul");
 		}
 
 		if ((window.scrollX == 0) && (window.scrollY == 0)){
-			removeUU();
-			removeUL();
-			removeLL();
+			rotateARROW();
 			document.getElementById('scroll-to-top').classList.add("s2tdn");
 		}
 	};
@@ -82,32 +74,25 @@ function checkSTP() {
 
 
 
-function removeUU(){
+function rotateARROW(){
 	var qwe = document.getElementById('scroll-to-top');
 	var wer = new RegExp("s2truu");
-			
+	var ert = new RegExp("s2trul");
+	var rty = new RegExp("s2trll");
+		
 	if (wer.test(qwe) == true){
 		document.getElementById('scroll-to-top').classList.remove("s2truu");
 	}
-}
 
-function removeUL(){
-	var qwe = document.getElementById('scroll-to-top');
-	var rty = new RegExp("s2trll");
-
-	if (rty.test(qwe) == true){
+	if (ert.test(qwe) == true){
 		document.getElementById('scroll-to-top').classList.remove("s2trul");
+	}
+	
+	if (rty.test(qwe) == true){
+		document.getElementById('scroll-to-top').classList.remove("s2trll");
 	}
 }
 
-function removeLL(){
-	var qwe = document.getElementById('scroll-to-top');
-	var ert = new RegExp("s2trll");
-
-	if (ert.test(qwe) == true){
-		document.getElementById('scroll-to-top').classList.remove("s2trll");
-	}	
-}
 
 
 function scrollToTop(duration) {
