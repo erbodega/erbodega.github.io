@@ -76,8 +76,8 @@ function checkSTP() {
 
 
 
-function rotateARROW(){
-	var qwe = document.getElementById('stta');
+function rotateARROW() {
+	var qwe = document.getElementById('stta').className;
 	var wer = new RegExp("s2truu");
 	var ert = new RegExp("s2trul");
 	var rty = new RegExp("s2trll");
