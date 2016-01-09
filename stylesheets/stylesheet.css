@@ -203,3 +203,22 @@ a {
 .hidediv {
 	display: none;
 }
+
+.qwerty {
+	list-style: none;
+}
+
+.qwerty li {
+	border: 1px solid #0f0;
+	display: inline-block;
+	padding: 5px;
+}
+
+.qwerty li a {
+	background: #000;
+	color: #808c91;
+}
+
+.qwerty li a:hover {
+	color: #0f0;
+}
