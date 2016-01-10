@@ -221,4 +221,5 @@ a {
 
 .qwerty li a:hover {
 	color: #0f0;
+	text-decoration: none;
 }
